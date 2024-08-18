@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactieve CV Website</title>
+    <title>Zoek Gebruikers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1 id="profiel-naam">Mijn Interactieve CV</h1>
-        <p id="profiel-adres"></p>
-        <p id="profiel-telefoon"></p>
-        <p id="profiel-email"></p>
+        <h1>Zoek en bekijk gebruikersprofielen</h1>
+        <div id="login-container">
+            <div id="login-logo" title="Klik om gegevens te bekijken">FB</div>
+            <span id="login-user">Inloggen</span>
+        </div>
     </header>
 
+    <section>
+        <form id="search-form">
+            <input type="text" id="search-name" placeholder="Naam (Bijv. Leanne Graham)" required>
+            <button type="button" id="search-button">Zoeken</button>
+        </form>
+        <div id="user-details">
+            <h2>Details</h2>
+            <div id="user-list"></div>
+        </div>
+    </section>
+
     <script src="scripts/fetchData.js"></script>
-    <script src="scripts/formValidation.js"></script>
-    <script src="scripts/localStorage.js"></script>
 </body>
 </html>
