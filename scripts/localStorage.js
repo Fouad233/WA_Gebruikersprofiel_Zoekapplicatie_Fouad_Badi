@@ -1,3 +1,3 @@
-localStorage.setItem('Gebruikersnaam', 'Fouad');
-const Gebruikersnaam = localStorage.getItem('Gebruikersnaam');
-console.log(Gebruikersnaam);
+localStorage.setItem('username', 'Fouad');
+const username = localStorage.getItem('username');
+console.log(username);
