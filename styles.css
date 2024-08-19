@@ -1,25 +1,90 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f491;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #333;
+    color: #a18585;
     padding: 10px 0;
     text-align: center;
+    position: relative;
+}
+
+#login-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#login-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #301616;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#login-user {
+    color: #fff;
 }
 
 section {
-    margin: 20px;
     padding: 20px;
-    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #4CAF50;
+#search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-name {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #b30000;
+}
+
+.user {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.user h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.user p {
+    margin: 5px 0;
 }
